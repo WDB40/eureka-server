@@ -22,8 +22,9 @@ bootJar{
 
 group = 'com.WDB40'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 10
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -41,7 +42,7 @@ ext {
     springCloudVersion = 'Finchley.SR1'
 }
 
-dependencies {
+dependencies{
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-web-services')
     compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
